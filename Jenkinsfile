@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "lptarik/simple-app"#!!!
+    registry = "lptarik/simple-app" #!!!
     registryCredential = 'dockerhub' #!!!
     dockerImage = ''
   }
