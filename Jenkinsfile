@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "lptarik/simple-app" 
+    registry = "lptarik/simple-app!!!"
     registryCredential = 'dockerhub'
     dockerImage = ''
   }
@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/lptarik/simple-web-app.git'
+        git 'https://github.com/lptarik/simple-web-app.git!!!'
       }
     }
     stage('Building image') {
